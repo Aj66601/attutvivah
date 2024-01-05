@@ -1,0 +1,60 @@
+﻿@model IEnumerable<ATTUT.Data.Models.BranchModel>
+@{
+    ViewData["Title"] = "Showroom / Branch List";
+    int i = 1;
+}
+
+<div class="form-w3layouts">
+    <div class="row">
+        <div class="col-lg-12">
+            <section class="panel">
+                <header class="panel-heading">
+                    Showroom/ Branch List
+                   @* <span class="tools pull-right">
+                        <a class="btn btn-sm btn-danger" href="/Config/AddBranch">Add</a>
+                    </span>*@
+                </header>
+                <div class="panel-body">                    
+                    <table class="table table-bordered table-responsive-md" id="tblBranch">
+                        <thead>
+                            <tr>
+                                <th>Sr. No.</th>
+                                <th>Showroom/Branch Name</th>
+                                <th>Code</th>
+                                <th>Address</th> 
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model != null)
+                            {
+                                if (Model.Count() > 0)
+                                {
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>@(i++)</td>
+                                            <td>@Html.DisplayFor(modelItem => item.BranchName)</td>
+                                            <td>@Html.DisplayFor(modelItem => item.BranchCode)</td>
+                                            <td>@Html.DisplayFor(modelItem => item.Address)</td> 
+                                            <td>
+                                                <a href="/Config/EditBranch?Id=@item.BranchID"><i class="fa fa-edit"></i></a>
+                                            </td>
+                                        </tr>
+                                    }
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+@section scripts{
+    <script type="text/javascript">
+        $(function () {
+            $("#tblBranch").dataTable({ "ordering": true, 'iDisplayLength': 100 });
+        });
+    </script>
+}

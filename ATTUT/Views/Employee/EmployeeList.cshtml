@@ -1,0 +1,64 @@
+﻿@model IEnumerable<ATTUT.Data.Models.EmployeeModel>
+@{
+    ViewData["Title"] = "Employee List";
+    int i = 1;
+}
+<div class="form-w3layouts">
+    <div class="row">
+        <div class="col-lg-12">
+            <section class="panel">
+                <header class="panel-heading">
+                    Employee List
+                    <span class="tools pull-right">
+                        <a class="btn btn-sm btn-danger" href="/Employee/AddEmployee">Add</a>
+                    </span>
+                </header>
+                <div class="panel-body">
+                    <table class="table table-bordered table-responsive-md" id="tblEmployee">
+                        <thead>
+                            <tr>
+                                <th>Sr. No.</th>
+                                <th>Branch</th>
+                                <th>Name</th>
+                                <th>Contact No. </th> 
+                                <th>Role</th> 
+                                <th>IsActive</th>                                
+                                <th>#</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model != null)
+                            {
+                                if (Model.Count() > 0)
+                                {
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>@(i++)</td>
+                                            <td>@Html.DisplayFor(modelItem => item.BranchName)</td>
+                                            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                                            <td>@Html.DisplayFor(modelItem => item.ContactNo)</td> 
+                                            <td>@Html.DisplayFor(modelItem => item.RoleName)</td> 
+                                            <td>@Html.DisplayFor(modelItem => item.IsActive)</td>
+                                            <td>
+                                                <a href="/Employee/EditEmployee?Id=@item.EmpId"><i class="fa fa-edit"></i></a>
+                                            </td>
+                                        </tr>
+                                    }
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script type="text/javascript">
+        $(function () {
+            $("#tblEmployee").dataTable({ "ordering": true, 'iDisplayLength': 100 });
+        });
+    </script>
+}

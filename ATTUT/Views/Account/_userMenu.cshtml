@@ -1,0 +1,42 @@
+﻿@using Microsoft.AspNetCore.Http
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor Accessor
+@using Newtonsoft.Json;
+@using ATTUT.Data.Models;
+@{
+
+    List<MenuAccessModel> menuAccesses = new List<MenuAccessModel>();
+    if (Context.Session.GetString("sessionkeystore") != null)
+    {
+        var _MenuAccess = Context.Session.GetString("sessionkeystore");
+        menuAccesses = JsonConvert.DeserializeObject<List<MenuAccessModel>>(_MenuAccess);
+    }
+    foreach (var item in menuAccesses.Where(s => s.ParentID == 0).GroupBy(Obj => new { Obj.ID }).Distinct().ToList())
+    {
+        if (item.FirstOrDefault().IsChildMenu == true)
+        {
+            <li class="sub-menu">
+                <a href="javascript:;">
+                    @Html.Raw(item.FirstOrDefault().Icon)
+                    <span>@Html.Raw(item.FirstOrDefault().Name)</span>
+                </a>
+                <ul class="sub">
+                    @{
+                        foreach (var firstItem in (menuAccesses.Where(s => s.ParentID == item.FirstOrDefault().ID).ToList()))
+                        {
+                            <li><a href='/@firstItem.Controller/@firstItem.ActionName'> @Html.Raw(firstItem.Name)</a></li>
+                        }
+                    }
+                </ul>
+            </li>
+        }
+        else
+        {
+            <li>
+                <a href="/@item.FirstOrDefault().Controller/@item.FirstOrDefault().ActionName">
+                    @Html.Raw(item.FirstOrDefault().Icon)
+                    <span>@Html.Raw(item.FirstOrDefault().Name)</span>
+                </a>
+            </li>
+        }
+    }
+}

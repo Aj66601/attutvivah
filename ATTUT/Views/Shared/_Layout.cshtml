@@ -1,0 +1,130 @@
+﻿@inject Microsoft.AspNetCore.Http.IHttpContextAccessor Accessor;
+@using Newtonsoft.Json;
+@using Microsoft.AspNetCore.Http;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"] - Attut Vivah CPanel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <link href="~/css/style.css" rel='stylesheet' type='text/css' />
+    <link href="~/css/style-responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/font.css" type="text/css" />
+    <link href="~/css/font-awesome.css" rel="stylesheet">
+    <script src="~/js/jquery2.0.3.min.js"></script>
+    <script src="~/js/raphael-min.js"></script>
+    <link href="~/css/jquery.dataTables.css" rel="stylesheet" />
+    <link href="~/css/bootstrap-multiselect.css" rel="stylesheet" />
+    <link href="~/css/bootstrap-select.css" rel="stylesheet" />
+    <script src="~/js/bootstrap-select.js"></script>
+</head>
+<body>
+    <section id="container">
+        <header class="header fixed-top clearfix">
+            <div class="brand">
+                <a href="/Home/Index" class="logo" style="color:white; font-size:15px; font-family:Sofia; font-style: italic;">
+                    <img src="~/images/logo.png" height="50px" width="40px" alt="">
+                    Attut Vivah</a>
+                   
+                <div class="sidebar-toggle-box">
+                    <div class="fa fa-bars"></div>
+                </div>
+            </div>
+            <div class="top-nav clearfix">
+                <ul class="nav pull-right top-menu">
+                    <li>
+                        <input id="searchText" type="text" class="form-control search" placeholder="Search">
+                    </li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <img alt="" src="~/images/Blank-Trainer.png">
+                            <span class="username">
+                                @Accessor.HttpContext?.Session.GetString("Name")
+                            </span>
+                            <span class="username">
+                                | @Accessor.HttpContext?.Session.GetString("Role")
+                            </span>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu extended logout">
+                            <li><a href="/Profile/MyProfile"><i class="fa fa-suitcase"></i>Profile</a></li>
+                            <li><a href="/Profile/ChangeFiscal"><i class="fa fa-suitcase"></i>Change Fiscal</a></li>
+                            @*<li><a href="/Profile/ChangePassword"><i class="fa fa-cog"></i> Change Password</a></li>*@
+                            <li><a href="/Account/Logout"><i class="fa fa-key"></i>Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <aside>
+            <div id="sidebar" class="nav-collapse">
+                <div class="leftside-navigation">
+                    <ul class="sidebar-menu" id="nav-accordion">
+                        @{
+                            if (Context.Session.GetString("sessionkeystore") != null)
+                            {
+                                Html.RenderPartial("~/views/Account/_usermenu.cshtml");
+                            }
+                        }
+
+                        <li><a href="/Account/Logout"><i class="fa fa-key"></i>Log Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <section id="main-content">
+            <section class="wrapper">
+                @if (TempData["Success"] != null)
+                {
+                    <div id="alertdiv1" class="alert alert-success alert-dismissable">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <strong>Success!</strong> @TempData["Success"]
+                    </div>
+                }
+                @if (TempData["Error"] != null)
+                {
+                    <div id="alertdiv" class="alert alert-danger alert-dismissable">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <strong>Danger!</strong> @TempData["Error"]
+                    </div>
+                }
+                <div style="min-height:80vh">
+                    @RenderBody()
+                    <br />
+                </div>
+            </section>
+            <div class="footer" style="position:fixed;width:100%;bottom: 0px; float:right">
+                <div class="wthree-copyright">
+                    <p style="margin-left:58%;">©@DateTime.Now.Year Attut Vivah. All rights reserved.</p>
+                </div>
+            </div>
+        </section>
+    </section>
+    <div>
+        @RenderBody()
+    </div>
+    <script src="~/js/bootstrap.js"></script>
+    <script src="~/js/jquery.dcjqaccordion.2.7.js"></script>
+    <script src="~/js/scripts.js"></script>
+    <script src="~/js/jquery.slimscroll.js"></script>
+    <script src="~/js/jquery.nicescroll.js"></script>
+    <script src="~/js/jquery.scrollTo.js"></script>
+    <script src="~/js/bootstrap-datepicker.js"></script>
+    <script src="~/js/jquery.dataTables.min.js"></script>
+    <script src="~/js/bootstrap-multiselect.js"></script>
+    @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".sub li").click(function () {
+                $(this).addClass('active');
+                $(this).parent().parent().find('.sidebar-menu').addClass('active');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+﻿@model  ATTUT.Data.Models.MenusModel
+@{
+    ViewBag.Title = "Role base user right";
+}
+<style>
+    hr {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+</style>
+<div class="form-w3layouts">
+    <!-- page start-->
+    <div class="row">
+        <div class="col-lg-12">
+            <section class="panel">
+                <header class="panel-heading">
+                    Role base user right 
+                </header>
+                <div class="panel-body">
+                    <div class="form">
+                        @using (Html.BeginForm())
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            <div class="form-horizontal">
+                                <fieldset>
+                                    <legend>User Role</legend>
+                                    <div class="form-group">
+                                        <label class="col-sm-1">Role</label>
+                                       <div class="col-md-2">
+                                    <select asp-for="RoleId" class="form-control selectRole show-tick input-sm" asp-items="@ViewBag.DdlRole as SelectList"  onchange = "ViewmenuinRole();"  >
+                                        
+                                    </select>
+                                    <span asp-validation-for="RoleId" class="text-danger"></span>
+                                </div>                 
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>Rights for Role</legend>
+                                    <div id="div1" class="table-responsive" style="overflow-y:auto; overflow-x:hidden; height :250px;">
+                                    </div>
+                                </fieldset>
+                                <div class="form-group">
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-4">
+                                        <input type="submit" value="Save" class="btn btn-sm btn-info" />
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () { 
+        $('#RoleId').attr('data-live-search', true);
+        $('.selectRole').selectpicker(
+            {
+                width: '100%',
+                title: '--Choose Role--',
+                size: 5
+            });
+        ViewmenuinRole();
+    });
+        
+   
+    function ViewmenuinRole() {
+        var vRoleID = $('#RoleId').val();
+        $.ajax({
+            type: 'GET',
+            url: "/Config/List_Menus_json",
+            dataType: 'html',
+            data: { RoleID: vRoleID == '' ? 0 : vRoleID },
+            success: function (data) {
+                $("#div1").empty().append(data);
+
+            },
+            error: function (ex) {
+                $("#div1").empty().append(ex);
+            }
+        });
+    }
+</script>

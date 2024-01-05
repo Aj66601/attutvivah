@@ -1,0 +1,38 @@
+﻿@model ATTUT.Data.Models.MenusModel
+
+<style>
+    .form-group {
+        margin-bottom: 0px;
+    }
+</style>
+
+@{
+    int i = 0, j = 0;
+}
+<div class="form-group">
+    @foreach (var item in Model.ParentList.Where(s => s.ParentID == 0).GroupBy(Obj => new { Obj.ID }).Distinct().ToList())
+    {
+
+        <div class="col-md-12">
+            @Html.HiddenFor(m => item.FirstOrDefault().ID, new { Name = "ParentList[" + @i + "].ID", @id = "ParentList_" + @i + "__ID" })
+            <input type="hidden" asp-for=@item.FirstOrDefault().ID name="ParentList[@i].ID" id="ParentList__ID_@i" />
+            @*@Html.EditorFor(m => item.FirstOrDefault().CheckedStatus, new { htmlAttributes = new { @Name = "ParentList[" + @i + "].CheckedStatus", @id = "ParentList_" + @i + "__CheckedStatus" } })*@
+            <input type="checkbox" asp-for="@item.FirstOrDefault().CheckedStatus" name="ParentList[@i].CheckedStatus" id="ParentList_CheckedStatus_@i" />
+            <span>@Html.DisplayFor(m => item.FirstOrDefault().Name)</span>
+        </div>
+        foreach (var firstItem in (Model.ParentList.Where(s => s.ParentID == item.FirstOrDefault().ID).OrderBy(x=>x.DisplayOrder).ToList()))
+        {
+            <div class="col-md-offset-1 col-md-11">
+
+                @*@Html.HiddenFor(m => firstItem.ID, new { @Name = "SubMenuList[" + @j + "].ID", @id = "SubMenuList_" + @j + "__ID" })*@
+                <input type="hidden" asp-for="@firstItem.ID" name="SubMenuList[@j].ID" id="SubMenuList__ID_@j">
+                @*@Html.EditorFor(m => firstItem.CheckedStatus, new { htmlAttributes = new { @Name = "SubMenuList[" + @j + "].CheckedStatus", @id = "SubMenuList_" + @j + "__CheckedStatus" } })*@
+                <input type="checkbox" asp-for="@firstItem.CheckedStatus" name="SubMenuList[@j].CheckedStatus" id="SubMenuList_CheckedStatus_@j" />
+                <span>@Html.DisplayFor(x => firstItem.Name)</span>
+            </div>
+            <span style="display:none;">@(j++)</span>
+        }
+
+        <span style="display:none;">@(i++)</span>
+    }
+</div>

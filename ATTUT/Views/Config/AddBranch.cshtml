@@ -1,0 +1,212 @@
+﻿@model ATTUT.Data.Models.BranchModel
+@{
+    ViewData["Title"] = "Add Showroom / Branch";
+}
+<div class="form-w3layouts">
+    <div class="row">
+        <div class="col-lg-12">
+            <section class="panel">
+                <header class="panel-heading">
+                    Add New Showroom/ Branch
+                    <span class="tools pull-right">
+                        <a class="btn btn-sm btn-danger" href="/Config/BranchList">Back</a>
+                    </span>
+                </header>
+                <div class="panel-body">
+                    <form asp-action="AddBranch" autocomplete="off">
+                        <div class="form-horizontal">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <fieldset>
+                                <legend>Showroom/ Branch Details</legend>
+                                <div class="form-group">
+                                    <label asp-for="CompanyId" class="control-label input-sm col-md-2"></label>
+                                    <div class="col-md-4">
+                                        <select asp-for="CompanyId" class="form-control input-sm selectsupp" asp-items="@ViewBag.DdlCompany as SelectList">
+                                            <option value="">--select--</option>
+                                        </select>
+                                        <span asp-validation-for="CompanyId" class="text-danger"></span>
+                                    </div>
+                                    <label asp-for="BranchName" class="control-label input-sm col-md-2"></label>
+                                    <div class="col-md-4">
+                                        <input type="text" asp-for="BranchName" class="form-control input-sm" />
+                                        <span asp-validation-for="BranchName" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="BranchCode" class="control-label input-sm col-md-2"></label>
+                                    <div class="col-md-4">
+                                        <input type="text" asp-for="BranchCode" class="form-control input-sm" />
+                                        <span asp-validation-for="BranchCode" class="text-danger"></span>
+                                    </div>
+                                    <label asp-for="Address" class="control-label input-sm col-md-2"></label>
+                                    <div class="col-md-4">
+                                        <input type="text" asp-for="Address" class="form-control input-sm" />
+                                        <span asp-validation-for="Address" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="ContactNo" class="control-label input-sm col-md-2"></label>
+                                    <div class="col-md-4">
+                                        <input type="text" asp-for="ContactNo" class="form-control input-sm" />
+                                        <span asp-validation-for="ContactNo" class="text-danger"></span>
+                                    </div>
+                                    <label asp-for="Email" class="control-label input-sm col-md-2"></label>
+                                    <div class="col-md-4">
+                                        <input type="text" asp-for="Email" class="form-control input-sm" />
+                                        <span asp-validation-for="Email" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="PinCode" class="control-label input-sm col-md-2"></label>
+                                    <div class="col-md-4">
+                                        <input type="text" asp-for="PinCode" class="form-control input-sm" />
+                                        <span asp-validation-for="PinCode" class="text-danger"></span>
+                                    </div>
+                                    <label asp-for="StateID" class="control-label input-sm col-md-2"></label>
+                                    <div class="col-md-4">
+                                        <select asp-for="StateID" class="form-control input-sm selectsupp" asp-items="@ViewBag.DdlState as SelectList">
+                                            <option value="0">--select--</option>
+                                        </select>
+                                        <span asp-validation-for="StateID" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                   
+                                   @*  <label asp-for="BillingBranchId" class="control-label input-sm col-md-2"></label>
+                                    <div class="col-md-4">
+                                        <select asp-for="BillingBranchId" class="form-control input-sm selectsupp" asp-items="@ViewBag.DdlBranch as SelectList">
+                                            <option value="0">--select--</option>
+                                        </select>
+                                        <span asp-validation-for="BillingBranchId" class="text-danger"></span>
+                                    </div> 
+                                </div>
+                                    <div class="form-group">*@
+                                    <label asp-for="AccountType" class="control-label input-sm col-md-2"></label>
+                                    <div class="col-md-4">
+                                        <select asp-for="AccountType" class="form-control input-sm selectsupp" onchange="GetAccountDetails()">
+                                            <option value="0">--select--</option>
+                                            <option value="1">Default</option>
+                                            <option value="2">Branch Account</option>
+                                        </select>
+                                        <span asp-validation-for="AccountType" class="text-danger"></span>
+                                    </div>
+                                    <label asp-for="GSTIN" class="control-label input-sm col-md-2"></label>
+                                    <div class="col-md-4">
+                                        <input type="text" asp-for="GSTIN" class="form-control input-sm" />
+                                        <span asp-validation-for="GSTIN" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </fieldset>
+                          @*   <fieldset>
+                                <legend>Contact Details</legend>
+                                <div class="form-group">
+                                    <label asp-for="ContactPerson" class="control-label input-sm col-md-2"></label>
+                                    <div class="col-md-4">
+                                        <input type="text" asp-for="ContactPerson" class="form-control input-sm" />
+                                        <span asp-validation-for="ContactPerson" class="text-danger"></span>
+                                    </div>
+                                    <label asp-for="ContactPersonNo" class="control-label input-sm col-md-2"></label>
+                                    <div class="col-md-4">
+                                        <input type="text" asp-for="ContactPersonNo" class="form-control input-sm" />
+                                        <span asp-validation-for="ContactPersonNo" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </fieldset> *@
+                            <fieldset>
+                                <legend>Bank Details</legend>
+                                <div class="form-group">
+                                    <label asp-for="Account.BankName" class="control-label input-sm col-md-2"></label>
+                                    <div class="col-md-4">
+                                        <input type="text" asp-for="Account.BankName" class="form-control input-sm" />
+                                        <span asp-validation-for="Account.BankName" class="text-danger"></span>
+                                    </div>
+                                    <label asp-for="Account.BankAddress" class="control-label input-sm col-md-2"></label>
+                                    <div class="col-md-4">
+                                        <input type="text" asp-for="Account.BankAddress" class="form-control input-sm" />
+                                        <span asp-validation-for="Account.BankAddress" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="Account.AccountNo" class="control-label input-sm col-md-2"></label>
+                                    <div class="col-md-4">
+                                        <input type="text" asp-for="Account.AccountNo" class="form-control input-sm" />
+                                        <span asp-validation-for="Account.AccountNo" class="text-danger"></span>
+                                    </div>
+                                    <label asp-for="Account.IFSCCode" class="control-label input-sm col-md-2"></label>
+                                    <div class="col-md-4">
+                                        <input type="text" asp-for="Account.IFSCCode" class="form-control input-sm" />
+                                        <span asp-validation-for="Account.IFSCCode" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="Account.Paytm" class="control-label input-sm col-md-2"></label>
+                                    <div class="col-md-4">
+                                        <input type="text" asp-for="Account.Paytm" class="form-control input-sm" />
+                                        <span asp-validation-for="Account.Paytm" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-4">
+                                <input type="submit" value="Save" class="btn btn-sm btn-success" />
+                                <a class="btn btn-sm btn-danger" href="/Config/BranchList">Cancel</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script type="text/javascript">
+        function GetAccountDetails() {
+            var _accountType = $('#AccountType').val();
+            var _comanyId = $('#CompanyId').val();
+            var _branchID = 0;
+
+            $.ajax({
+                type: 'GET',
+                url: "/General/GetDefaultAccount_Json",
+                dataType: 'json',
+                data: { AccountType: _accountType, BranchID: _branchID, cid: _comanyId },
+                success: function (data) {
+                    if (_accountType == 1) {
+                        $("#Account_BankName").val(data.bankName);
+                        $("#Account_BankAddress").val(data.bankAddress);
+                        $("#Account_BankDetails").val(data.bankDetails);
+                        $('#Account_AccountNo').val(data.accountNo);
+                        $('#Account_IFSCCode').val(data.ifscCode);
+                        $('#Account_Paytm').val(data.paytm);
+                        $('#Account_BankName').attr('disabled', 'disabled');
+                        $('#Account_BankAddress').attr('disabled', 'disabled');
+                        $('#Account_AccountNo').attr('disabled', 'disabled');
+                        $('#Account_IFSCCode').attr('disabled', 'disabled');
+                        $('#Account_Paytm').attr('disabled', 'disabled');
+                    }
+                    else {
+                        $("#Account_BankName").val(data.bankName);
+                        $("#Account_BankAddress").val(data.bankAddress);
+                        $('#Account_AccountNo').val(data.accountNo);
+                        $('#Account_IFSCCode').val(data.ifscCode);
+                        $('#Account_Paytm').val(data.paytm);
+                        $('#Account_BankName').attr('disabled', false);
+                        $('#Account_BankAddress').attr('disabled', false);
+                        $('#Account_AccountNo').attr('disabled', false);
+                        $('#Account_IFSCCode').attr('disabled', false);
+                        $('#Account_Paytm').attr('disabled', false);
+
+                    }
+                },
+                error: function (ex) {
+
+                }
+            });
+        }
+    </script>
+}

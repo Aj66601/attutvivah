@@ -1,0 +1,37 @@
+﻿@model ATTUT.Data.Models.HSNDetailsModel
+<div class="form-group">
+    <label asp-for="CGST" class="control-label input-sm col-md-2"></label>
+    <div class="col-md-4">
+        <input asp-for="CGST" class="form-control input-sm" readonly />
+        <span asp-validation-for="CGST" class="text-danger"></span>
+    </div>
+    <label asp-for="SGST" class="control-label input-sm col-md-2"></label>
+    <div class="col-md-4">
+        <input asp-for="SGST" class="form-control input-sm" readonly />
+        <span asp-validation-for="SGST" class="text-danger"></span>
+    </div>
+</div>
+<div class="form-group">
+    <label asp-for="IGST" class="control-label input-sm col-md-2"></label>
+    <div class="col-md-4">
+        <input asp-for="IGST" class="form-control input-sm" readonly />
+        <span asp-validation-for="IGST" class="text-danger"></span>
+    </div>
+    <label asp-for="Surcharge" class="control-label input-sm col-md-2"></label>
+    <div class="col-md-4">
+        <input asp-for="Surcharge" class="form-control input-sm" readonly />
+        <span asp-validation-for="Surcharge" class="text-danger"></span>
+    </div>
+</div>
+<div class="form-group">
+    <label asp-for="Cess" class="control-label input-sm col-md-2"></label>
+    <div class="col-md-4">
+        <input asp-for="Cess" class="form-control input-sm" readonly />
+        <span asp-validation-for="Cess" class="text-danger"></span>
+    </div>
+    <label asp-for="Description" class="control-label input-sm col-md-2"></label>
+    <div class="col-md-4">
+        <textarea asp-for="Description" class="form-control input-sm" readonly></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+</div>

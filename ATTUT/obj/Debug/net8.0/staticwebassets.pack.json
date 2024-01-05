@@ -1,0 +1,645 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ATTUT.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ATTUT.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\UploadedFiles\\DomesticProducts\\0cfe26e1-9fd1-4b59-b963-9da349eb6319.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\DomesticProducts\\0cfe26e1-9fd1-4b59-b963-9da349eb6319.jpg"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\UploadedFiles\\DomesticProducts\\a3ef6879-e4b4-4512-9916-834d382acbf5.PNG",
+      "PackagePath": "staticwebassets\\UploadedFiles\\DomesticProducts\\a3ef6879-e4b4-4512-9916-834d382acbf5.PNG"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\UploadedFiles\\DomesticProducts\\a901c5f9-45a0-488b-8d46-b185d456ef2e.PNG",
+      "PackagePath": "staticwebassets\\UploadedFiles\\DomesticProducts\\a901c5f9-45a0-488b-8d46-b185d456ef2e.PNG"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\UploadedFiles\\DomesticProducts\\f086e12c-73c4-40c9-ab93-d338a6213e16.PNG",
+      "PackagePath": "staticwebassets\\UploadedFiles\\DomesticProducts\\f086e12c-73c4-40c9-ab93-d338a6213e16.PNG"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\UploadedFiles\\DomesticProducts\\fddc6a86-9beb-44b3-bdfa-f25a9802ead7.PNG",
+      "PackagePath": "staticwebassets\\UploadedFiles\\DomesticProducts\\fddc6a86-9beb-44b3-bdfa-f25a9802ead7.PNG"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\UploadedFiles\\Items\\110d53cf-ae30-4563-9ed8-03f065024cbe.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\Items\\110d53cf-ae30-4563-9ed8-03f065024cbe.jpg"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\UploadedFiles\\Items\\2b1739b4-f0a7-4f99-989f-da8c12218291.jpeg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\Items\\2b1739b4-f0a7-4f99-989f-da8c12218291.jpeg"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\UploadedFiles\\Items\\b0f99e61-d25f-40a1-879b-d3a6ccac33d5.jpeg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\Items\\b0f99e61-d25f-40a1-879b-d3a6ccac33d5.jpeg"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\UploadedFiles\\Items\\d5a498b7-e08f-4a9d-846d-f87243b0bf20.jpeg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\Items\\d5a498b7-e08f-4a9d-846d-f87243b0bf20.jpeg"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\UploadedFiles\\Items\\f09483b9-e3bc-4d6e-acbc-4308e6bb7b39.jpeg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\Items\\f09483b9-e3bc-4d6e-acbc-4308e6bb7b39.jpeg"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\UploadedFiles\\Items\\f3d811fe-8834-448e-a508-4d7ebce81e1a.jpeg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\Items\\f3d811fe-8834-448e-a508-4d7ebce81e1a.jpeg"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\UploadedFiles\\StockIn\\17d1c408-ffcc-4642-bc75-e6f19ca4ef9c.jpeg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\StockIn\\17d1c408-ffcc-4642-bc75-e6f19ca4ef9c.jpeg"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\UploadedFiles\\StockIn\\25c85df1-8874-46e3-ba0e-f8e660b13f55.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\StockIn\\25c85df1-8874-46e3-ba0e-f8e660b13f55.jpg"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\UploadedFiles\\StockIn\\4bb2bd71-b203-433f-bb57-86ef97b8224d.jpeg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\StockIn\\4bb2bd71-b203-433f-bb57-86ef97b8224d.jpeg"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\UploadedFiles\\StockIn\\5261d600-47fe-43b6-adb2-29800b422c54.jpeg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\StockIn\\5261d600-47fe-43b6-adb2-29800b422c54.jpeg"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\UploadedFiles\\StockIn\\5995397f-5034-4581-925a-339ba3e1c84e.jpeg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\StockIn\\5995397f-5034-4581-925a-339ba3e1c84e.jpeg"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\UploadedFiles\\StockIn\\623c6343-3422-407a-a0f1-72aacc23827c.jpeg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\StockIn\\623c6343-3422-407a-a0f1-72aacc23827c.jpeg"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\UploadedFiles\\StockIn\\6a7792b5-c72c-46b1-9b70-dad0ef74ce6b.jpeg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\StockIn\\6a7792b5-c72c-46b1-9b70-dad0ef74ce6b.jpeg"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\UploadedFiles\\StockIn\\8e22a2aa-3887-420d-9422-2771728f3cb5.jpeg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\StockIn\\8e22a2aa-3887-420d-9422-2771728f3cb5.jpeg"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\UploadedFiles\\StockIn\\b647dbf7-a2c2-4bbf-b469-5e3c2d8abdfe.jpeg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\StockIn\\b647dbf7-a2c2-4bbf-b469-5e3c2d8abdfe.jpeg"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\UploadedFiles\\StockIn\\c0965d59-31d2-43fb-aec3-c05d4665c97b.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\StockIn\\c0965d59-31d2-43fb-aec3-c05d4665c97b.jpg"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\UploadedFiles\\StockIn\\da3e8741-bed4-4194-98d3-760567582626.jpeg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\StockIn\\da3e8741-bed4-4194-98d3-760567582626.jpeg"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\UploadedFiles\\StockIn\\ec7e89dd-0aeb-4c2a-b113-bfe63709dc8b.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\StockIn\\ec7e89dd-0aeb-4c2a-b113-bfe63709dc8b.jpg"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\UploadedFiles\\StockIn\\f2ba39ad-5c4b-4fb8-bf58-1ee84d22f56d.jpeg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\StockIn\\f2ba39ad-5c4b-4fb8-bf58-1ee84d22f56d.jpeg"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\css\\LoginStyle.css",
+      "PackagePath": "staticwebassets\\css\\LoginStyle.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\css\\bootstrap-multiselect.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-multiselect.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\css\\bootstrap-select.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-select.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\css\\bootstrap-select.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-select.min.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\css\\datepicker.css",
+      "PackagePath": "staticwebassets\\css\\datepicker.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\css\\font.css",
+      "PackagePath": "staticwebassets\\css\\font.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\css\\jquery-ui.css",
+      "PackagePath": "staticwebassets\\css\\jquery-ui.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\css\\jquery.dataTables.css",
+      "PackagePath": "staticwebassets\\css\\jquery.dataTables.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\css\\jquery.qtip.min.css",
+      "PackagePath": "staticwebassets\\css\\jquery.qtip.min.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\css\\jqvmap.css",
+      "PackagePath": "staticwebassets\\css\\jqvmap.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\css\\lightbox.css",
+      "PackagePath": "staticwebassets\\css\\lightbox.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\css\\minimal.css",
+      "PackagePath": "staticwebassets\\css\\minimal.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\css\\monthly.css",
+      "PackagePath": "staticwebassets\\css\\monthly.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\css\\morris.css",
+      "PackagePath": "staticwebassets\\css\\morris.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\css\\style-responsive.css",
+      "PackagePath": "staticwebassets\\css\\style-responsive.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\fonts\\glyphicons-halflings-regular.eot",
+      "PackagePath": "staticwebassets\\fonts\\glyphicons-halflings-regular.eot"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\fonts\\glyphicons-halflings-regular.svg",
+      "PackagePath": "staticwebassets\\fonts\\glyphicons-halflings-regular.svg"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\fonts\\glyphicons-halflings-regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\glyphicons-halflings-regular.ttf"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\fonts\\glyphicons-halflings-regular.woff",
+      "PackagePath": "staticwebassets\\fonts\\glyphicons-halflings-regular.woff"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\fonts\\glyphicons-halflings-regular.woff2",
+      "PackagePath": "staticwebassets\\fonts\\glyphicons-halflings-regular.woff2"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\images\\Blank-Trainer.png",
+      "PackagePath": "staticwebassets\\images\\Blank-Trainer.png"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\images\\bg.jpg",
+      "PackagePath": "staticwebassets\\images\\bg.jpg"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\images\\hero-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\hero-bg.jpg"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\images\\loginbg1.jpg",
+      "PackagePath": "staticwebassets\\images\\loginbg1.jpg"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\images\\nav-expand.png",
+      "PackagePath": "staticwebassets\\images\\nav-expand.png"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\images\\no-pic.jpg",
+      "PackagePath": "staticwebassets\\images\\no-pic.jpg"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\images\\scaner.png",
+      "PackagePath": "staticwebassets\\images\\scaner.png"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\images\\search-icon.png",
+      "PackagePath": "staticwebassets\\images\\search-icon.png"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\js\\DomesticOrder.js",
+      "PackagePath": "staticwebassets\\js\\DomesticOrder.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\js\\bootstrap-datepicker.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap-datepicker.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\js\\bootstrap-multiselect.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap-multiselect.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\js\\bootstrap-select.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap-select.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\js\\canvasjs.min.js",
+      "PackagePath": "staticwebassets\\js\\canvasjs.min.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\js\\common.js",
+      "PackagePath": "staticwebassets\\js\\common.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\js\\customer.js",
+      "PackagePath": "staticwebassets\\js\\customer.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\js\\item.js",
+      "PackagePath": "staticwebassets\\js\\item.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\js\\jquery-ui.js",
+      "PackagePath": "staticwebassets\\js\\jquery-ui.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\js\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-ui.min.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\js\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\js\\jquery.dcjqaccordion.2.7.js",
+      "PackagePath": "staticwebassets\\js\\jquery.dcjqaccordion.2.7.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\js\\jquery.fileupload.js",
+      "PackagePath": "staticwebassets\\js\\jquery.fileupload.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\js\\jquery.nicescroll.js",
+      "PackagePath": "staticwebassets\\js\\jquery.nicescroll.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\js\\jquery.scrollTo.js",
+      "PackagePath": "staticwebassets\\js\\jquery.scrollTo.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\js\\jquery.slimscroll.js",
+      "PackagePath": "staticwebassets\\js\\jquery.slimscroll.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\js\\jquery.vmap.asia.js",
+      "PackagePath": "staticwebassets\\js\\jquery.vmap.asia.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\js\\jquery.vmap.australia.js",
+      "PackagePath": "staticwebassets\\js\\jquery.vmap.australia.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\js\\jquery.vmap.europe.js",
+      "PackagePath": "staticwebassets\\js\\jquery.vmap.europe.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\js\\jquery.vmap.js",
+      "PackagePath": "staticwebassets\\js\\jquery.vmap.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\js\\jquery.vmap.sampledata.js",
+      "PackagePath": "staticwebassets\\js\\jquery.vmap.sampledata.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\js\\jquery.vmap.world.js",
+      "PackagePath": "staticwebassets\\js\\jquery.vmap.world.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\js\\jquery2.0.3.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery2.0.3.min.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\js\\lightbox-plus-jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\lightbox-plus-jquery.min.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\js\\monthly.js",
+      "PackagePath": "staticwebassets\\js\\monthly.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\js\\morris.js",
+      "PackagePath": "staticwebassets\\js\\morris.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\js\\performaInvoice.js",
+      "PackagePath": "staticwebassets\\js\\performaInvoice.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\js\\raphael-min.js",
+      "PackagePath": "staticwebassets\\js\\raphael-min.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\js\\scripts.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\js\\stock.js",
+      "PackagePath": "staticwebassets\\js\\stock.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\GIT\\attutvivah\\ATTUT\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ATTUT.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ATTUT.props",
+      "PackagePath": "build\\ATTUT.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ATTUT.props",
+      "PackagePath": "buildMultiTargeting\\ATTUT.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ATTUT.props",
+      "PackagePath": "buildTransitive\\ATTUT.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

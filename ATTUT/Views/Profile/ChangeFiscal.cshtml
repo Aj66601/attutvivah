@@ -1,0 +1,41 @@
+﻿@model ATTUT.Data.Models.DdlFiscalModel
+@{
+    ViewData["Title"] = "Change Fiscal";
+}
+<div class="form-w3layouts">
+    <div class="row">
+        <div class="col-lg-12">
+            <section class="panel">
+                <header class="panel-heading">
+                    Change Fiscal
+                </header>
+                <div class="panel-body">
+                    <form asp-action="ChangeFiscal" autocomplete="off">
+                        <div class="form-horizontal">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="form-group">
+                                <label asp-for="Value" class="control-label input-sm col-md-2"></label>
+                                <div class="col-md-4">
+                                    <select asp-for="Value" class="form-control input-sm " asp-items="@ViewBag.DdlFiscal as SelectList">
+                                    </select>
+                                    <span asp-validation-for="Value" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-4">
+                                    <input type="submit" value="Change" class="btn btn-sm btn-success" /> 
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

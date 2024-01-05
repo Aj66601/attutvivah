@@ -1,0 +1,96 @@
+﻿@model ATTUT.Data.Models.EmployeeModel
+@{
+    ViewData["Title"] = "Add Employee";
+    int i = 1;
+}
+
+<div class="form-w3layouts">
+    <div class="row">
+        <div class="col-lg-12">
+            <section class="panel">
+                <header class="panel-heading">
+                    Add Employee
+                    <span class="tools pull-right">
+                        <a class="btn btn-sm btn-danger" href="/Employee/EmployeeList">Back</a>
+                    </span>
+                </header>
+                <div class="panel-body">
+                    <form asp-action="AddEmployee" autocomplete="off">
+                        <div class="form-horizontal">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <fieldset>
+                                <legend>Employee Details</legend>
+                                <div class="form-group">
+                                    <label asp-for="Name" class="control-label input-sm col-md-2"></label>
+                                    <div class="col-md-4">
+                                        <input asp-for="Name" class="form-control input-sm" />
+                                        <span asp-validation-for="Name" class="text-danger"></span>
+                                    </div>
+                                    <label asp-for="ContactNo" class="control-label input-sm col-md-2"></label>
+                                    <div class="col-md-4">
+                                        <input asp-for="ContactNo" class="form-control input-sm" />
+                                        <span asp-validation-for="ContactNo" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="EmailId" class="control-label input-sm col-md-2"></label>
+                                    <div class="col-md-4">
+                                        <input asp-for="EmailId" class="form-control input-sm" />
+                                        <span asp-validation-for="EmailId" class="text-danger"></span>
+                                    </div>
+                                    <label asp-for="Address" class="control-label input-sm col-md-2"></label>
+                                    <div class="col-md-4">
+                                        <input asp-for="Address" class="form-control input-sm" />
+                                        <span asp-validation-for="Address" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="EmployeeId" class="control-label input-sm col-md-2"></label>
+                                    <div class="col-md-4">
+                                        <input asp-for="EmployeeId" class="form-control input-sm" />
+
+                                        <span asp-validation-for="EmployeeId" class="text-danger"></span>
+                                    </div>
+                                    <label asp-for="RoleName" class="control-label input-sm col-md-2"></label>
+                                    <div class="col-md-4">
+                                        <select asp-for="RoleId" class="form-control input-sm " asp-items="@ViewBag.DdlRole as SelectList">
+                                            <option>--select--</option>
+                                        </select>
+                                        <span asp-validation-for="RoleId" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="IsLoginEnable" class="control-label input-sm col-md-2"></label>
+                                    <div class="col-md-4">
+                                        <input asp-for="IsLoginEnable" />
+                                        <span asp-validation-for="IsLoginEnable" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-offset-2 col-md-2">
+                                        <input type="submit" value="Save" class="btn btn-sm btn-success" />
+                                        <a class="btn btn-sm btn-danger" href="/Employee/EmployeeList">Cancel</a>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script src="~/js/common.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+        });
+    </script>
+}
+
+
