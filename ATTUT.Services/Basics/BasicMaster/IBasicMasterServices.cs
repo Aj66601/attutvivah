@@ -19,5 +19,10 @@ namespace ATTUT.Services.Basics
         Task<List<StateModel>> StateList(object[] parameters);
         Task<CreateOrUpdateModel> CreateOrUpdateState(object[] parameters);
         #endregion-----------------State--------------------
+
+        #region--------------------District--------------------
+        Task<List<DistrictModel>> DistrictList(object[] parameters);
+        Task<CreateOrUpdateModel> CreateOrUpdateDistrict(object[] parameters);
+        #endregion-----------------District--------------------
     }
 }

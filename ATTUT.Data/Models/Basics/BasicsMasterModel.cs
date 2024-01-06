@@ -52,4 +52,28 @@ namespace ATTUT.Data.Models.Basics
     }
 
 
+    public class DistrictModel
+    {
+
+        public int? CountryId { get; set; } = 0;
+        [Required]
+        [Display(Name = "Country Name")]
+        public string CountryName { get; set; } = string.Empty;
+        
+        public int StateId { get; set; }
+       
+        [Display(Name = "State Name")]
+        public string StateName { get; set; } = string.Empty;
+
+        [Key]
+        public int DistrictId { get; set;}         
+        [Required]
+        [Display(Name = "District Name")]
+
+        public string DistrictName { get; set; } = string.Empty;
+
+        [Display(Name = "District Remarks")]
+        public string DistrictRemarks { get; set; } = string.Empty;
+        public bool IsActive { get; set; }
+    }
 }

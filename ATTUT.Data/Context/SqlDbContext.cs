@@ -110,6 +110,7 @@ namespace ATTUT.Data.Context
         #region------------Basic Master-------------------      
         public DbSet<CountryModel> Countries { get; set; }
         public DbSet<StateModel> States { get; set; }
+        public DbSet<DistrictModel> Districts { get; set; }
 
         #endregion---------Basic Master-----------------
     }

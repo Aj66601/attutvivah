@@ -41,5 +41,19 @@ namespace ATTUT.Services.Basics.BasicMaster
             return (await DbContext.CreateOrUpdate.FromSqlRaw("EXEC [MstState_INSorUPD] {0},{1},{2},{3},{4},{5}", parameters).ToListAsync()).First();
         }
         #endregion--------------------State--------------------
+
+        #region--------------------District--------------------
+        public async Task<List<DistrictModel>> DistrictList(object[] parameters)
+        {
+            return await DbContext.Districts.FromSqlRaw("EXEC [MstDistrict_List] {0}", parameters).ToListAsync();
+        }
+
+        public async Task<CreateOrUpdateModel> CreateOrUpdateDistrict(object[] parameters)
+        {
+            return (await DbContext.CreateOrUpdate.FromSqlRaw("EXEC [MstDistrict_INSorUPD] {0},{1},{2},{3},{4},{5}", parameters).ToListAsync()).First();
+        }
+        #endregion--------------------District--------------------
+
+        
     }
 }

@@ -28,7 +28,7 @@ namespace ATTUT.Services.General
 
         public async Task<List<StateDdlModel>> DdlState(object[] parameters)
         {
-            return await DbContext.DdlState.FromSqlRaw("EXEC [LkpState_Ddl] {0}", parameters).ToListAsync();
+            return await DbContext.DdlState.FromSqlRaw("EXEC [State_Ddl] {0}", parameters).ToListAsync();
         }
         public async Task<List<CountryDdlModel>> DdlCountry(object[] parameters)
         {

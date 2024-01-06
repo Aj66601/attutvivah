@@ -1,0 +1,65 @@
+﻿@model IEnumerable<ATTUT.Data.Models.Basics.DistrictModel>
+@{
+    ViewData["Title"] = "District List";
+    int i = 1;
+}
+
+<div class="form-w3layouts">
+    <div class="row">
+        <div class="col-lg-12">
+            <section class="panel">
+                <header class="panel-heading">
+                    District List
+                    <span class="tools pull-right">
+                        <a class="btn btn-sm btn-danger" href="/BasicsMaster/AddDistrict">Add</a>
+                    </span>
+                </header>
+                <div class="panel-body">
+                    <table class="table table-bordered table-responsive-md" id="tblDistrict">
+                        <thead>
+                            <tr>
+                                <th>Sr. No.</th>
+                                <th>Country Name</th>
+                                <th>State Name</th>
+                                <th>District Name</th>
+                                <th>District Remarks</th>
+                                <th>Is Active</th>
+                                <th>#</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model != null)
+                            {
+                                if (Model.Count() > 0)
+                                {
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>@(i++)</td>
+                                            <td>@Html.DisplayFor(modelItem => item.CountryName)</td>
+                                            <td>@Html.DisplayFor(modelItem => item.StateName)</td>
+                                            <td>@Html.DisplayFor(modelItem => item.DistrictName)</td>
+                                            <td>@Html.DisplayFor(modelItem => item.DistrictRemarks)</td>
+                                            <td>@Html.DisplayFor(modelItem => item.IsActive)</td>
+                                            <td>
+                                                <a href="/BasicsMaster/EditDistrict?Id=@item.DistrictId"><i class="fa fa-edit"></i></a>
+                                            </td>
+                                        </tr>
+                                    }
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script type="text/javascript">
+        $(function () {
+            $("#tblState").dataTable({ "ordering": true, 'iDisplayLength': 100 });
+        });
+    </script>
+}
