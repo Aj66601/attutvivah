@@ -13,6 +13,8 @@ namespace ATTUT.Services.General
         Task<List<CompanyDdlModel>> DdlCompany(object[] parameters);
         Task<List<DdlUserRoleModel>> DdlUserRole(object[] parameters);
         Task<List<StateDdlModel>> DdlState(object[] parameters);
+      
+        Task<List<CountryDdlModel>> DdlCountry(object[] parameters);
         Task<List<BranchDdlModel>> DdlBranch(object[] parameters);
         Task<DefaultAccountModel> GetDefaultAccount(object[] parameters);
         Task<List<DdlCompanyBranchModel>> DdlCompanyBranch(object[] parameters);

@@ -83,6 +83,29 @@ namespace ATTUT.Controllers.Basics
             var _result = await _basicmasterServices.StateList(parameters);
             return View(_result);
         }
+           public IActionResult AddState()
+        {
+            ViewBag.DdlCountry = new SelectList(DdlCountry(), "Value", "Text");
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AddState(StateModel obj)
+        {
+            object[] parameters = { obj.CountryId, 0, obj.StateName ?? "", obj.StateRemarks ?? "",1, GetSession().UserId };
+            var _result = await _basicmasterServices.CreateOrUpdateState(parameters);
+            if (_result.InfoCode == 0)
+            {
+                TempData["Success"] = _result.InfoMessage;
+                return RedirectToAction("StateList");
+            }
+            else
+            {
+                TempData["Error"] = _result.InfoMessage;
+            }
+            return View(obj);
+        }
 
 
         #endregion

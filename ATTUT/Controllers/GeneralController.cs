@@ -199,6 +199,11 @@ namespace ATTUT.Controllers
             object[] parameter = { cid };
             return _generalServices.DdlState(parameter).Result;
         }
+        public IEnumerable<CountryDdlModel> DdlCountry(int cid = 0)
+        {
+            object[] parameter = { cid };
+            return _generalServices.DdlCountry(parameter).Result;
+        }
         public JsonResult DdlState_Json(int cid = 0)
         {
             object[] parameter = { cid };

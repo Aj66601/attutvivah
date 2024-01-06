@@ -30,6 +30,13 @@ namespace ATTUT.Data.Models
         public int Value { get; set; }
         public string Text { get; set; } = string.Empty;
     }
+
+    public class CountryDdlModel
+    {
+        [Key]
+        public int Value { get; set; }
+        public string Text { get; set; } = string.Empty;
+    }
     public class StateDdlModel
     {
         [Key]

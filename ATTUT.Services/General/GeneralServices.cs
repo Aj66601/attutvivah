@@ -30,6 +30,10 @@ namespace ATTUT.Services.General
         {
             return await DbContext.DdlState.FromSqlRaw("EXEC [LkpState_Ddl] {0}", parameters).ToListAsync();
         }
+        public async Task<List<CountryDdlModel>> DdlCountry(object[] parameters)
+        {
+            return await DbContext.DdlCountry.FromSqlRaw("EXEC [Country_Ddl]").ToListAsync();
+        }
         public async Task<List<BranchDdlModel>> DdlBranch(object[] parameters)
         {
             return await DbContext.DdlBranch.FromSqlRaw("EXEC [MstBranch_Ddl] {0}", parameters).ToListAsync();

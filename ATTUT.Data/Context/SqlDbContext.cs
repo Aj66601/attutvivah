@@ -25,6 +25,7 @@ namespace ATTUT.Data.Context
         #region--------------General-------------------  
         public DbSet<CompanyDdlModel> DdlCompany { get; set; }
         public DbSet<DdlUserRoleModel> DdlUserRoles { get; set; }
+        public DbSet<CountryDdlModel> DdlCountry { get; set; }
         public DbSet<StateDdlModel> DdlState { get; set; }
         public DbSet<BranchDdlModel> DdlBranch { get; set; }
         public DbSet<DefaultAccountModel> DefaultAccounts { get; set; }
