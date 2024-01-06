@@ -30,6 +30,16 @@ namespace ATTUT.Services.Basics.BasicMaster
         }
         #endregion--------------------Country--------------------
 
+        #region--------------------State--------------------
+        public async Task<List<StateModel>> StateList(object[] parameters)
+        {
+            return await DbContext.States.FromSqlRaw("EXEC [MstState_List] {0}", parameters).ToListAsync();
+        }
 
+        public async Task<CreateOrUpdateModel> CreateOrUpdateState(object[] parameters)
+        {
+            return (await DbContext.CreateOrUpdate.FromSqlRaw("EXEC [MstState_INSorUPD] {0},{1},{2},{3},{4},{5}", parameters).ToListAsync()).First();
+        }
+        #endregion--------------------State--------------------
     }
 }

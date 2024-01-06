@@ -18,6 +18,7 @@ namespace ATTUT.Controllers.Basics
             _basicmasterServices = basicmasterServices;
         }
 
+        #region --------- COUNTRY------------
         public async Task<IActionResult> CountryList()
         {
             object[] parameters = {  0 };
@@ -48,57 +49,43 @@ namespace ATTUT.Controllers.Basics
             return View(obj);
         }
 
-        //#region--------------------Category--------------------
-        //public async Task<IActionResult> CategoryList()
-        //{
-        //    object[] parameters = { GetSession().CompanyId, 0 };
-        //    var _result = await _masterServices.CategoryList(parameters);
-        //    return View(_result);
-        //}
-        //public IActionResult AddCategory()
-        //{
-        //    return View();
-        //}
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public async Task<IActionResult> AddCategory(CategoryModel obj)
-        //{
-        //    object[] parameters = { 0, GetSession().CompanyId, obj.CategoryName ?? "", 1, GetSession().UserId };
-        //    var _result = await _masterServices.CreateOrUpdateCategory(parameters);
-        //    if (_result.InfoCode == 0)
-        //    {
-        //        TempData["Success"] = _result.InfoMessage;
-        //        return RedirectToAction("CategoryList");
-        //    }
-        //    else
-        //    {
-        //        TempData["Error"] = _result.InfoMessage;
-        //    }
-        //    return View(obj);
-        //}
-        //public async Task<IActionResult> EditCategory(int id)
-        //{
-        //    object[] parameters = { GetSession().CompanyId, id };
-        //    var _result = await _masterServices.CategoryList(parameters);
-        //    return View(_result.First());
-        //}
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public async Task<IActionResult> EditCategory(CategoryModel obj)
-        //{
-        //    object[] parameters = { obj.CategoryID, GetSession().CompanyId, obj.CategoryName ?? "", obj.IsActive, GetSession().UserId };
-        //    var _result = await _masterServices.CreateOrUpdateCategory(parameters);
-        //    if (_result.InfoCode == 0)
-        //    {
-        //        TempData["Success"] = _result.InfoMessage;
-        //        return RedirectToAction("CategoryList");
-        //    }
-        //    else
-        //    {
-        //        TempData["Error"] = _result.InfoMessage;
-        //    }
-        //    return View(obj);
-        //}
-        //#endregion-----------------Category--------------------
+        public async Task<IActionResult> EditCountry(int id)
+        {
+            object[] parameters = { id };
+            var _result = await _basicmasterServices.CountryList(parameters);
+            return View(_result.First());
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditCountry(CountryModel obj)
+        {
+            object[] parameters = { obj.CountryId, obj.CountryName ?? "", obj.CountryRemarks ?? "", obj.IsActive, GetSession().UserId };
+            var _result = await _basicmasterServices.CreateOrUpdateCountry(parameters);
+            if (_result.InfoCode == 0)
+            {
+                TempData["Success"] = _result.InfoMessage;
+                return RedirectToAction("CountryList");
+            }
+            else
+            {
+                TempData["Error"] = _result.InfoMessage;
+            }
+            return View(obj);
+        }
+
+        #endregion
+
+        #region --------- STATES ----------
+        public async Task<IActionResult> StateList()
+        {
+            object[] parameters = { 0 };
+            var _result = await _basicmasterServices.StateList(parameters);
+            return View(_result);
+        }
+
+
+        #endregion
+
     }
 }

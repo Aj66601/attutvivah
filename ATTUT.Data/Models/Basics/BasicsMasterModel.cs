@@ -30,4 +30,26 @@ namespace ATTUT.Data.Models.Basics
         public string CountryRemarks { get; set; } = string.Empty;
         public bool IsActive { get; set; }
     }
+
+
+    public class StateModel
+    {
+
+        public int? CountryId { get; set; } = 0;
+        [Required]
+        [Display(Name = "Country Name")]
+        public string CountryName { get; set; } = string.Empty;
+        [Key]
+        public int StateId { get; set; }
+        [Required]
+        [Display(Name = "State Name")]
+
+        public string StateName { get; set; } = string.Empty;
+
+        [Display(Name = "State Remarks")]
+        public string StateRemarks { get; set; } = string.Empty;
+        public bool IsActive { get; set; }
+    }
+
+
 }

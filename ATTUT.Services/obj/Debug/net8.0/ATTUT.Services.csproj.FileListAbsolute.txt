@@ -23,6 +23,7 @@ D:\GIT\attutvivah\ATTUT.Services\obj\Debug\net8.0\ATTUT.Services.GeneratedMSBuil
 D:\GIT\attutvivah\ATTUT.Services\obj\Debug\net8.0\ATTUT.Services.AssemblyInfoInputs.cache
 D:\GIT\attutvivah\ATTUT.Services\obj\Debug\net8.0\ATTUT.Services.AssemblyInfo.cs
 D:\GIT\attutvivah\ATTUT.Services\obj\Debug\net8.0\ATTUT.Services.csproj.CoreCompileInputs.cache
+D:\GIT\attutvivah\ATTUT.Services\obj\Debug\net8.0\ATTUT.Services.sourcelink.json
 D:\GIT\attutvivah\ATTUT.Services\obj\Debug\net8.0\ATTUT.Services.csproj.CopyComplete
 D:\GIT\attutvivah\ATTUT.Services\obj\Debug\net8.0\ATTUT.Services.dll
 D:\GIT\attutvivah\ATTUT.Services\obj\Debug\net8.0\refint\ATTUT.Services.dll

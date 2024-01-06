@@ -1,6 +1,6 @@
-﻿@model IEnumerable<ATTUT.Data.Models.Basics.CountryModel>
+﻿@model IEnumerable<ATTUT.Data.Models.Basics.StateModel>
 @{
-    ViewData["Title"] = "Country List";
+    ViewData["Title"] = "State List";
     int i = 1;
 }
 
@@ -9,18 +9,19 @@
         <div class="col-lg-12">
             <section class="panel">
                 <header class="panel-heading">
-                    Country List
+                    state List
                     <span class="tools pull-right">
-                        <a class="btn btn-sm btn-danger" href="/BasicsMaster/AddCountry">Add</a>
+                        <a class="btn btn-sm btn-danger" href="/BasicsMaster/AddState">Add</a>
                     </span>
                 </header>
                 <div class="panel-body">
-                    <table class="table table-bordered table-responsive-md" id="tblCountry">
+                    <table class="table table-bordered table-responsive-md" id="tblState">
                         <thead>
                             <tr>
                                 <th>Sr. No.</th>
                                 <th>Country Name</th>
-                                <th>Country Remarks</th>
+                                <th>State Name</th>
+                                <th>State Remarks</th>
                                 <th>Is Active</th>
                                 <th>#</th>
                             </tr>
@@ -35,10 +36,11 @@
                                         <tr>
                                             <td>@(i++)</td>
                                             <td>@Html.DisplayFor(modelItem => item.CountryName)</td>
-                                             <td>@Html.DisplayFor(modelItem => item.CountryRemarks)</td>
+                                            <td>@Html.DisplayFor(modelItem => item.StateName)</td>
+                                            <td>@Html.DisplayFor(modelItem => item.StateRemarks)</td>
                                             <td>@Html.DisplayFor(modelItem => item.IsActive)</td>
                                             <td>
-                                                <a href="/BasicsMaster/EditCountry?Id=@item.CountryId"><i class="fa fa-edit"></i></a>
+                                                <a href="/BasicsMaster/EditState?Id=@item.StateId"><i class="fa fa-edit"></i></a>
                                             </td>
                                         </tr>
                                     }
@@ -52,10 +54,10 @@
     </div>
 </div>
 
-@section scripts{
+@section scripts {
     <script type="text/javascript">
         $(function () {
-            $("#tblCountry").dataTable({ "ordering": true, 'iDisplayLength': 100 });
+            $("#tblState").dataTable({ "ordering": true, 'iDisplayLength': 100 });
         });
     </script>
 }

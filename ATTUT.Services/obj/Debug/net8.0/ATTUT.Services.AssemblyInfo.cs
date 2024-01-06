@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ATTUT.Services")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+153d080ae18f85edaf1dd55baa8116eff4bf7206")]
 [assembly: System.Reflection.AssemblyProductAttribute("ATTUT.Services")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ATTUT.Services")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

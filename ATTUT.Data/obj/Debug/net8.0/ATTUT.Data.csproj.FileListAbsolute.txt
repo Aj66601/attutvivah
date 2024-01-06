@@ -18,6 +18,7 @@ D:\GIT\attutvivah\ATTUT.Data\obj\Debug\net8.0\ATTUT.Data.GeneratedMSBuildEditorC
 D:\GIT\attutvivah\ATTUT.Data\obj\Debug\net8.0\ATTUT.Data.AssemblyInfoInputs.cache
 D:\GIT\attutvivah\ATTUT.Data\obj\Debug\net8.0\ATTUT.Data.AssemblyInfo.cs
 D:\GIT\attutvivah\ATTUT.Data\obj\Debug\net8.0\ATTUT.Data.csproj.CoreCompileInputs.cache
+D:\GIT\attutvivah\ATTUT.Data\obj\Debug\net8.0\ATTUT.Data.sourcelink.json
 D:\GIT\attutvivah\ATTUT.Data\obj\Debug\net8.0\ATTUT.Data.dll
 D:\GIT\attutvivah\ATTUT.Data\obj\Debug\net8.0\refint\ATTUT.Data.dll
 D:\GIT\attutvivah\ATTUT.Data\obj\Debug\net8.0\ATTUT.Data.pdb
