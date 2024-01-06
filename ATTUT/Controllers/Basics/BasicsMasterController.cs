@@ -106,7 +106,32 @@ namespace ATTUT.Controllers.Basics
             }
             return View(obj);
         }
+      
+        public async Task<IActionResult> EditState(int id)
+        {
+            object[] parameters = { id };
+            var _result = await _basicmasterServices.StateList(parameters);
+            return View(_result.First());
+        }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+
+        public async Task<IActionResult> EditState(StateModel obj)
+        {
+            object[] parameters = { obj.StateId, obj.StateName ?? "", obj.StateRemarks ?? "", obj.IsActive, GetSession().UserId };
+            var _result = await _basicmasterServices.CreateOrUpdateState(parameters);
+            if (_result.InfoCode == 0)
+            {
+                TempData["Success"] = _result.InfoMessage;
+                return RedirectToAction("StateList");
+            }
+            else
+            {
+                TempData["Error"] = _result.InfoMessage;
+            }
+            return View(obj);
+        }
 
         #endregion
 
